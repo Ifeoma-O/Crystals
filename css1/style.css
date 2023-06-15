@@ -1,0 +1,268 @@
+body{
+    overflow-x: hidden;
+}
+.main{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-collapse{
+position: relative;
+left: 28%;}
+
+.navbar-nav li a{
+    text-align: center;
+    margin-right: 20px;
+}
+
+.nav-item a:hover{
+    color: #8f03e0;
+}
+
+.nav-item a:visited{
+    color: #81009b;
+}
+
+
+.header{
+    background-image: url(../images/imagebg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 300px;
+    width: 100%;
+}
+
+.views{
+    background-color: #3c014a;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    width: 120px;
+    border-radius: 50px;
+    display: flex;
+    padding: 0 9px;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.categories{
+    width: 100%;
+}
+
+.categories > .me-2 {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+  
+.categories > .me-2 > img {
+    display: inline-block;
+    float: none;
+}
+
+.images:hover{
+    transform: scale(1.1);
+}
+
+.row{
+    width: 100%;
+    overflow: hidden;
+}
+
+.images{
+    width: 287.83px;
+    height: 215.92px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.seemore{
+
+    margin-top: 22px;
+    
+}
+
+.seemore button{
+    padding: 5px 18px;
+    background-color: #3c014a;
+    color: white;
+    font-weight: 500;
+    border: none;
+    box-shadow: 1rem;
+    
+}
+
+.seemore button:hover{
+    transform: scale(1.2);
+    box-shadow: 4px;
+}
+
+
+.about-container{
+   width: 100%;
+}
+
+.about{
+    position: relative ;
+    width: 80%;
+    left: 10%;
+    display: block;
+    margin-top: 9px;
+    text-align: justify;
+}
+
+.discount{
+    position: relative ;
+    width: 80%;
+    left: 8.5%;
+    margin-top: 9px;
+}
+
+.filter{
+    width: 50px;
+}
+
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }
+    
+    .dropdown-hover:hover>.dropdown-menu {
+    display: inline-block;
+    }
+    
+    .dropdown-hover>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+    }
+
+
+/*filter*/
+
+.filterDiv {
+
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  
+  /* Style the buttons */
+  .butn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    margin: 4px 17px;
+    padding-left: 10px;
+    padding-right: 100px;
+  }
+  
+  .butn:hover {
+    background-color: #ddd;
+  }
+
+  .accordion{
+    position: relative ;
+    width: 80%;
+    left: 8.5%;
+    margin-top: 9px;
+}
+
+.accordion{
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem white;
+}
+
+.accordion-button:not(.collapsed){
+    background-color:#3c014a;
+    color: white;
+}
+
+/*ticker*/
+
+.ticker {
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    
+  }
+  .ticker__list {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    animation: ticker 15s infinite linear;
+  }
+  .ticker:hover .ticker__list {
+    animation-play-state: paused;
+  }
+
+.ticker__item button{
+    color: #fff;
+    background-color: #70028c;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+#date,#dates,#location,#locations{
+    color: white;
+}
+
+  .ticker__item {
+    margin-right: 20px;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+#myBtnContainer{
+    display: flex;
+}
+
+#demo,#demo1{
+    margin-top: 10px;
+}
+
+  @keyframes ticker {
+    100% {
+      transform: translateX(-100%); /*try changing this to -100vw*/
+    }
+  }
+  
+ 
+
+  @import url('https://fonts.googleapis.com/css?family=Cardo:700');
+
+  
+footer{
+    color: white;
+    background-color: black;
+}
+
+.social-media a{
+    color: #fff;
+    margin: 10px;
+    
+}

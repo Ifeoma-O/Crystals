@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css1/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!--navbar-->
+ <!--nav bar-->
+ <nav class="navbar navbar-expand-lg shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="./images/logoo.png" alt="Avatar Logo" style="width:150px;" class="rounded-pill"> 
+    </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mb-lg-2">
+            <li class="nav-item"> 
+              <a class="nav-link" aria-current="page" href="index.html#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#FAQ">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+
+      <div class="views me-3">
+        <i class="fa fa-eye me-5 img-fluid" aria-hidden="true"></i>
+      <div id="visitor-count">0</div>
+      </div>
+    </nav>
+
+
+
+
+<div id="myBtnContainer">
+  <button class="btn shadow active ms-4 mt-4" onclick="filterSelection('all')" style="height: 38px;"> Show all</button>
+  <div class="dropdown">
+    <button class="btn shadow dropdown-toggle mt-4 ms-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Brand
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <button class="btn" onclick="filterSelection('pandora')"> Pandora
+      </button> <br>
+      <button class="btn" onclick="filterSelection('tiffany')"> Tiffany
+      </button> <br>
+      <button class="btn" onclick="filterSelection('swarovski')"> Swarovski
+      </button>
+    </div>
+    </div>
+
+    <div class="dropdown">
+    <button class="btn shadow dropdown-toggle ms-4 mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Colour
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <button class="btn" onclick="filterSelection('purple')"> Purple
+      </button>
+      <button class="btn" onclick="filterSelection('blue')"> Blue
+      </button>
+      <button class="btn" onclick="filterSelection('red')"> Red
+      </button>
+      <button class="btn" onclick="filterSelection('pink')"> Pink
+      </button>
+      <button class="btn" onclick="filterSelection('clear')"> Clear
+      </button>
+      <button class="btn" onclick="filterSelection('green')"> Green
+      </button>
+    </div>
+    
+  </div>
+
+  <div class="dropdown">
+    <button class="btn shadow dropdown-toggle ms-4 mt-4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Rating
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <button class="btn" onclick="filterSelection('1')"> 1 star
+      </button>
+      <button class="btn" onclick="filterSelection('2')"> 2 stars
+      </button>
+      <button class="btn" onclick="filterSelection('3')"> 3 stars
+      </button>
+      <button class="btn" onclick="filterSelection('4')"> 4 stars
+      </button>
+      <button class="btn" onclick="filterSelection('5')"> 5 stars
+      </button>
+    </div>
+    
+  </div>
+
+</div>
+    
+          <h4 class="fw-normal text-center mt-5" id="top">Shop from our Gallery</h4>
+          <div class="product_section layout_padding" id="amethyst">
+            <div class="container text-center">
+                
+              <div class="product_section_2 justify-content-center">  
+            <div class="row d-flex justify-content-center mt-5">
+                <div class="filterDiv swarovski purple 3 col-md-3 ">
+                    <img class=" ms-3 img-fluid shadow images" src="./images/amethyst/raw amethyst.jpg" alt="" width="287.83" height="215.92">
+                    <h6 class="text-center mt-3">Raw Amethyst(per kg)</h6>
+                    <h6 class="text-center mt-2 mb-4">NGN 42,000</h6>
+                </div>
+                <div class="filterDiv swarovski purple 4 col-md-3">
+                    <img class=" ms-2 img-fluid shadow images" src="./images/amethyst/neck.jpg" alt="">
+                    <h6 class="text-center mt-3">Amethyst with Pearl Necklace</h6>
+                    <h6 class="text-center mt-2">NGN 56,000</h6>
+                </div>
+                <div class="filterDiv pandora purple 3 col-md-3">
+                    <img class=" ms-2 img-fluid shadow images" src="./images/amethyst/set.jpg" alt="">
+                    <h6 class="text-center mt-3">Amethyst Jewellery Set</h6>
+                    <h6 class="text-center mt-2">NGN 128,000</h6>
+                </div>
+                <div class="filterDiv tiffany purple 4 col-md-3 ">
+                    <img class="ms-2 img-fluid shadow images" src="./images/amethyst/earring.jpg" alt="">
+                    <h6 class="text-center mt-3">Amethyst Earrings</h6>
+                    <h6 class="text-center mt-2">NGN 38,000</h6>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="product_section layout_padding" id="ruby">
+                  <div class="container text-center">
+                      
+                    <div class="product_section_2 justify-content-center">  
+                  <div class="mt-3 row d-flex justify-content-center">
+                      <div class="filterDiv pandora red 5 col-md-3 ">
+                          <img class="ms-3 img-fluid shadow images" src="./images/ruby/raw.jpg" alt="" width="287.83" height="215.92">
+                          <h6 class="text-center mt-3">Raw Ruby(100g)</h6>
+                          <h6 class="text-center mt-2">NGN 232,000</h6>
+                      </div>
+                      <div class="filterDiv swarovski red 5 col-md-3">
+                          <img class="ms-2 img-fluid shadow images" src="./images/ruby/neck.jpg" alt="" width="287.83" height="215.92">
+                          <h6 class="text-center mt-3">Ruby and Diamond Necklace</h6>
+                          <h6 class="text-center mt-2">NGN 149,000</h6>
+                      </div>
+                     
+                      <div class="filterDiv tiffany red 5 col-md-3">
+                          <img class="ms-2 img-fluid shadow images" src="./images/ruby/ring.jpg" alt="">
+                          <h6 class="text-center mt-3">Ruby Ring</h6>
+                          <h6 class="text-center mt-2">NGN 124,000</h6>
+                      </div>
+                    
+                      <div class="filterDiv pandora red 3 col-md-3">
+                          <img class=" ms-2 img-fluid shadow images" src="./images/ruby/silver-ruby bracelet.jpg" alt="">
+                          <h6 class="text-center mt-3">Silver Ruby Bracelet</h6>
+                          <h6 class="text-center mt-2">NGN 193,000</h6>
+                      </div>                
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="product_section layout_padding" id="quartz">
+              <div class="container text-center">
+                  
+                <div class="product_section_2 justify-content-center">  
+              <div class="mt-4 row d-flex justify-content-center">
+                  <div class="filterDiv pandora pink 5 col-md-3 ">
+                      <img class="ms-3 img-fluid shadow images" src="./images/quartz/rawrosequartz.jpg" alt="" width="287.83" height="215.92">
+                          <h6 class="text-center mt-3">Raw Rose Quartz(180g)</h6>
+                          <h6 class="text-center mt-2">NGN 211,000</h6>
+                      </div>
+                      <div class="filterDiv tiffany 4 col-md-3">
+                          <img class="ms-2 img-fluid shadow images" src="./images/quartz/rosequartz-diamond earrings.jpg" alt="" width="287.83" height="215.92">
+                          <h6 class="text-center mt-3">Rose Quartz Diamond Earrings</h6>
+                          <h6 class="text-center mt-2">NGN 94,000</h6>
+                      </div>
+                     
+                      <div class="filterDiv pandora clear 3 col-md-3 ">
+                          <img class="ms-2 img-fluid shadow images" src="./images/quartz/neckpiece.jpg" alt="">
+                          <h6 class="text-center mt-3">Wire Framed Quartz Necklace</h6>
+                          <h6 class="text-center mt-2">NGN 127,000</h6>
+                      </div>
+                    
+                      <div class="filterDiv swarovski pink 4 col-md-3">
+                          <img class=" ms-2 img-fluid shadow images" src="./images/quartz/necklace1.jpg" alt="">
+                          <h6 class="text-center mt-3">Rose Quartz Moon Necklace</h6>
+                          <h6 class="text-center mt-2">NGN 90,000</h6>
+                      </div>         
+                      </div>
+                      </div>       
+                </div>
+            </div>
+
+            <div class="product_section layout_padding" id="diamond">
+              <div class="container text-center">
+                  
+                <div class="product_section_2 justify-content-center">  
+              <div class="mt-4 row d-flex justify-content-center">
+                  <div class="filterDiv tiffany clear col-md-3 ">
+                      <img class="ms-3 img-fluid shadow 5 images" src="./images/diamond/diamond.jpg" alt="">
+                      <h6 class="text-center mt-3">Raw Diamond(1 gram)</h6>
+                      <h6 class="text-center mt-2">NGN 1,653,000</h6>
+                  </div>
+                  <div class="filterDiv swarovski clear 4 col-md-3">
+                      <img class="ms-3 img-fluid shadow  images" src="./images/diamond/neck.jpg" alt="">
+                      <h6 class="text-center mt-3">Diamond Necklace</h6>
+                      <h6 class="text-center mt-2">NGN 556,000</h6>
+                  </div>
+                  <div class="filterDiv tiffany clear 4 col-md-3">
+                      <img class=" ms-3 img-fluid shadow images" src="./images/diamond/bracelet.jfif" alt="">
+                      <h6 class="text-center mt-3">Diamond Bracelet</h6>
+                      <h6 class="text-center mt-2">NGN 482,000</h6>
+                  </div>
+                  <div class="filterDiv pandora clear 5 col-md-3">
+                    <img class=" ms-3 img-fluid shadow images" src="./images/diamond/engagement ring set.png" alt="">
+                    <h6 class="text-center mt-3">Diamond Engagement Ring Set</h6>
+                    <h6 class="text-center mt-2">NGN 882,000</h6>
+                </div>
+
+              </div>
+              </div>
+              </div>
+              </div>
+            
+
+              <div class="product_section layout_padding" id="sapphire">
+                <div class="container text-center">
+                    
+                  <div class="product_section_2 justify-content-center">  
+                <div class="mt-4 row d-flex justify-content-center">
+                  <div class="filterDiv swarovski blue 4 col-md-3">
+                    <img class=" ms-3 img-fluid shadow images" src="./images/sapphire/rawsapphire.jpg" alt="">
+                    <h6 class="text-center mt-3">Raw Sapphire</h6>
+                    <h6 class="text-center mt-2">NGN 370,000</h6>
+                </div>
+                    <div class="filterDiv pandora blue 3 col-md-3 ">
+                        <img class="ms-3 img-fluid shadow images" src="./images/sapphire/Oval-Sapphire.jpeg" alt="">
+                        <h6 class="text-center mt-3">Oval Sapphire Necklace</h6>
+                        <h6 class="text-center mt-2">NGN 163,000</h6>
+                    </div>
+                    <div class="filterDiv tiffany blue 4 col-md-3">
+                        <img class="ms-3 img-fluid shadow  images" src="./images/sapphire/sapring2.jpg" alt="">
+                        <h6 class="text-center mt-3">Sapphire Ring</h6>
+                        <h6 class="text-center mt-2">NGN 140,000</h6>
+                    </div>
+                    <div class="filterDiv swarovski blue 4
+                    col-md-3">
+                        <img class=" ms-3 img-fluid shadow images" src="./images/sapphire/tiffany-bracelet.jpg" alt="">
+                        <h6 class="text-center mt-3">Tiffany Sapphire Bracelet</h6>
+                        <h6 class="text-center mt-2">NGN 290,000</h6>
+                    </div>
+  
+                </div>
+                </div>
+                </div>
+                </div>
+              
+
+        <div class="product_section layout_padding" id="emerald">
+                <div class="container text-center">
+                    
+                  <div class="product_section_2 justify-content-center">  
+                <div class="mt-4 row d-flex justify-content-center">
+                  <div class="filterDiv swarovski green 5 col-md-3">
+                    <img class=" ms-3 img-fluid shadow images" src="./images/emerald/raw.jpg" alt="">
+                    <h6 class="text-center mt-3">Raw Sapphire</h6>
+                    <h6 class="text-center mt-2">NGN 370,000</h6>
+                </div>
+                    <div class="filterDiv tiffany green 4 col-md-3 ">
+                        <img class="ms-3 img-fluid shadow images" src="./images/emerald/set2.jpg" alt="">
+                        <h6 class="text-center mt-3">Oval Sapphire Necklace</h6>
+                        <h6 class="text-center mt-2">NGN 163,000</h6>
+                    </div>
+                    <div class="filterDiv pandora green 4 col-md-3">
+                        <img class="ms-3 img-fluid shadow  images" src="./images/emerald/ring.png" alt="">
+                        <h6 class="text-center mt-3">Sapphire Ring</h6>
+                        <h6 class="text-center mt-2">NGN 140,000</h6>
+                    </div>
+                    <div class="filterDiv swarovski green 5 col-md-3">
+                        <img class=" ms-3 img-fluid shadow images" src="./images/emerald/bracelet.jpg" alt="">
+                        <h6 class="text-center mt-3">Tiffany Sapphire Bracelet</h6>
+                        <h6 class="text-center mt-2">NGN 290,000</h6>
+                    </div>
+  
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+                <div class="product_section layout_padding">
+                  <div class="container text-center">
+                      <h5 class="text-center mb-4 mt-5 fw-normal product_title">Healing Crystals</h5>
+                    <div class="product_section_2 justify-content-center">  
+                  <div class="row d-flex justify-content-center">
+                    <div class="col-md-3 filterDiv 4">
+                      <img class=" ms-3 img-fluid shadow images" src="./images/healing stones/h1.jpg" alt="">
+                      <h6 class="text-center mt-3">12-piece Healing Crystal Set</h6>
+                      <h6 class="text-center mt-2">NGN 28,000</h6>
+                  </div>
+                      <div class="col-md-3 filterDiv 5">
+                          <img class="ms-3 img-fluid shadow images" src="./images/healing stones/chakra healing crystals.jfif" alt="">
+                          <h6 class="text-center mt-3">Arrow Head Chakra Crystals</h6>
+                          <h6 class="text-center mt-2">NGN 30,000</h6>
+                      </div>
+                      <div class="col-md-3 filterDiv 3">
+                          <img class="ms-3 img-fluid shadow  images" src="./images/healing stones/healing crystal necklace.jpg" alt="">
+                          <h6 class="text-center mt-3">Healing Crystal Necklace</h6>
+                          <h6 class="text-center mt-2">NGN 14,000</h6>
+                      </div>
+                      <div class="col-md-3 filterDiv 4">
+                          <img class=" ms-3 img-fluid shadow images" src="./images/healing stones/chakra healing kit.jfif" alt="">
+                          <h6 class="text-center mt-3">Chakra Healing Kit</h6>
+                          <h6 class="text-center mt-2">NGN 40,000</h6>
+                      </div>
+    
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="product_section layout_padding">
+                    <div class="container text-center">
+                        <h5 class="text-center mb-4 mt-5 fw-normal product_title"> Healing Crystals and Gemstone Guide</h5>
+                      <div class="product_section_2 justify-content-center">  
+                    <div class="row d-flex justify-content-center">
+                      <div class="col-md-3">
+                        <img class=" ms-3 img-fluid shadow images" src="./images/healing stones/guide2.jpg" alt="">
+                    </div>
+                        <div class="col-md-3 ">
+                            <img class="ms-3 img-fluid shadow images" src="./images/healing stones/guide4.png" alt="">
+                            
+                        </div>
+                        
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="back text-right">
+                      <a href="#top" style="text-decoration: underline; color: #70028c;">Back to top</a>
+                    </div>
+             <br><br>
+
+
+        <!--footer-->
+
+        <div class="blockcode">  
+          <footer class="page-footer shadow mt-4">
+            <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+              <div class="d-flex flex-wrap justify-content-between">
+                <div>
+                  <a href="/" class="d-flex align-items-center p-0 text-dark">
+                    <img alt="logo" src="./images/logoo.png" width="150px" height="50px" />
+                  </a>
+                  <p class="my-3" style="width: 250px">
+                    Explore our online crystal shop and enjoy the best the gemstone and crystal world has to offer!
+                  </p>
+                  <div class="mt-4 social-media">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook fa-2xl"></i>
+                    </a>
+      
+                    <a href="#">
+                      <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </a>
+      
+                    <a href="#">
+                      <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <p class="h5 mb-4 text-center" style="font-weight: 600" id="contact">Contact</p>
+                  <ul class="p-0 text-justify" style="list-style: none; cursor: pointer">
+                    <li class="my-2">
+                      <a class="text-light" href="/">Email: rockparadise@gmail.com</a>
+                    </li>
+                    <li class="my-2">
+                      <a class="text-light" href="/">Address: 237, Freeway Estate, Ajah.</a>
+                    </li>
+                    <li class="my-2">
+                      <a class="text-light" href="/">Phone: +234 905 6385 739</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div>
+                  <p class="h5 mb-4" style="font-weight: 600">Site Map</p>
+                  <ul class="p-0" style="list-style: none; cursor: pointer">
+                    <li class="my-2">
+                      <a class="text-light" href="index.html">Categories</a>
+                    </li>
+                    <li class="my-2">
+                      <a class="text-light" href="index.html">Top Selling Products</a>
+                    </li>
+                    <li class="my-2">
+                      <a class="text-light" href="index.html">Gallery</a>
+                    </li>
+            
+                    <li class="my-2">
+                      <a class="text-light" href="index.html#about">About Us</a>
+                    </li>
+                    <li class="my-2">
+                      <a class="text-light" href="index.html">Discounts and Offers</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <small class="text-center mt-5">&copy; Rock Paradise, 2023. All rights reserved.</small>
+            </div>
+          </footer>
+        </div>
+      
+      
+        
+      
+      
+      <!--scrolling ticker-->
+      
+        <div class="ticker">
+          <div class="ticker__list">
+            <div class="ticker__item">
+              <button onclick="date()">Date and Time</button>
+              <div id="date"></div>
+            </div>
+            <div class="ticker__item">
+              <button onclick="getlocation()">My location</button>
+              <div id="location"></div>
+            </div>
+           
+          </div>
+          <div class="ticker__list">
+            <div class="ticker__item">
+              <button onclick="dates()">Date and Time</button>
+              <div id="dates"></div>
+            </div>
+            <div class="ticker__item">
+              <button onclick="getlocations()">My location</button>
+              <div id="locations"></div>
+            </div>
+           
+          </div>
+          
+  </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        <script src="new.js"></script>
+</body>
+</html>
